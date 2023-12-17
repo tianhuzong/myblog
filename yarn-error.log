@@ -1,0 +1,61 @@
+Arguments: 
+  /root/.nvm/versions/node/v18.13.0/bin/node /root/.nvm/versions/node/v18.13.0/bin/yarn install --production --ignore-optional --silent
+
+PATH: 
+  /.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli:/root/.nvm/versions/node/v18.13.0/bin:/root/.yarn/bin:/root/.pnpm:/root/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.nvm/versions/node/v18.13.0/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://mirrors.tencent.com/npm/strip-indent/-/strip-indent-3.0.0.tgz: Request failed "502 Bad Gateway"
+      at ResponseError.ExtendableBuiltin (/root/.nvm/versions/node/v18.13.0/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/root/.nvm/versions/node/v18.13.0/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/root/.nvm/versions/node/v18.13.0/lib/node_modules/yarn/lib/cli.js:66215:16)
+      at Request.emit (node:events:513:28)
+      at module.exports.Request.onRequestResponse (/root/.nvm/versions/node/v18.13.0/lib/node_modules/yarn/lib/cli.js:141767:10)
+      at ClientRequest.emit (node:events:513:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:695:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+      at TLSSocket.socketOnData (node:_http_client:536:22)
+      at TLSSocket.emit (node:events:513:28)
+
+npm manifest: 
+  {
+    "name": "hexo-site",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "build": "hexo generate",
+      "clean": "hexo clean",
+      "deploy": "hexo deploy",
+      "server": "hexo server"
+    },
+    "hexo": {
+      "version": ""
+    },
+    "dependencies": {
+      "hexo": "^6.3.0",
+      "hexo-generator-archive": "^2.0.0",
+      "hexo-generator-category": "^2.0.0",
+      "hexo-generator-index": "^3.0.0",
+      "hexo-generator-tag": "^2.0.0",
+      "hexo-renderer-ejs": "^2.0.0",
+      "hexo-renderer-marked": "^6.0.0",
+      "hexo-renderer-stylus": "^2.1.0",
+      "hexo-server": "^3.0.0",
+      "hexo-theme-landscape": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
