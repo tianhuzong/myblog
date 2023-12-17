@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
@@ -27,16 +26,14 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
-      - name: Install hexo-theme-fluid
-        run: npm install --save hexo-theme-fluid
       - name: Build
         run: npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
-       
- deploy:
+
+  deploy:
     needs: build
     permissions:
       pages: write
