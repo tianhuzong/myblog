@@ -102,11 +102,11 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
     type: git
-    repo: git@github.com:tianhuzong/myblog.git
+    repo: git@github.com:tianhuzong/tianhuzong.github.io.git
     branch: master
 index:
   slogan:
-    enable: true
+    enable: false
     text: test
     api:
       enable: true
